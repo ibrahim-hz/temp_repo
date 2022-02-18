@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html and angular practice</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/angular.min.js"></script>
+
+</head>
+<body>
+    <div class="container" ng-app="">
+        <h1>This is the heading </h1>
+        <p>
+            Name: <input type="text" ng-model="name1">
+        </p>
+        <p ng-bind="name1">
+        </p>
+
+        <p>Name : <input type="text" ng-model="name2"></p>
+        <h1>Hello {{name2}}</h1>
+
+        <p>My first expression : {{5+5}}</p>
+        
+        <h2>Enter your first name: </h2>
+        <input type="text" ng-model="f_name">
+        <h2>Enter your last name: </h2>
+        <input type="text" ng-model="l_name">
+
+        <h1>Thank You {{f_name}} {{l_name}}</h1>
+
+        <div ng-init="myCol='tomato'">
+
+            <input style="background-color:{{myCol}}" ng-model="myCol">
+            
+        </div>
+
+        
+
+    </div>
+
+</body>
+</html>
